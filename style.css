@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+  
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(6, 2, 20);
+    color: white;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0%;
+    background-color: rgb(6, 2, 20);
+
+}
+.image-sec{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 22px;
+    color:white ;
+    font-size: 22px;
+}
+ul li a:hover{
+    color: aqua;
+}
+.logo{
+    font-size: 22px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 111px;
+}
+.mainText{
+    margin-top: 84px;
+}
+.mainText h1{
+    font-size: 68px;
+}
+.mainText h2{
+    font-size: 34px;
+    margin-top: 12px;
+    word-spacing: 7px;
+    color: brown;
+}
+.mainText h3{
+    font-size: 26px;
+}
+.mainText button{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(0, 202, 202);
+    color: white;
+    border: none;
+    margin-top: 22px;
+    font-size: 20px;
+}
+
+.head{
+    text-align: center;
+    padding: 88px;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 63px;
+    justify-content: center;
+    padding: 15px;
+    
+}
+#yt{
+    color: aqua;
+    margin-top: -22px;
+}
+.about img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid rgb(0, 255, 255);
+    margin-top: 7%;
+    margin-left: 4%;
+}
+.aboutText{
+    margin-top: 2px;
+   line-height: 75px;
+}
+
+.about p{
+    margin-top: 2px;
+    font-size: 22px;
+    width: 750px;
+    height: 100px;
+    line-height: 30px;
+}
+.about h2{
+    font-size: 46px;
+}
+
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    flex-wrap: wrap;
+}
+.workCard{
+    margin-inline: 22px;
+    margin-top: 42px;
+    text-align: center;
+}
+.workCard p{
+    margin-top: 11px;
+}
+.workCard a{
+    padding: 6px 22px;
+    background-color: pink;
+    text-decoration: none;
+    position: relative;
+    top: 12px;
+}
+.work img{
+    width: 560px;
+    border-radius: 4px;
+}
+.work-imggg{
+    width: 100px;
+    height: 400px;
+    
+    overflow: hidden;
+}
+.contact{
+    width: 400px;
+    margin: auto;
+    background-color: #808080;
+    padding: 22px;
+    text-align: center;
+
+}
+.prntskills{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 2, 20);
+  }
+  
+  .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+  }
+  
+  .skill-per{
+    height: 14px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  .skill-per{
+    text-align: end;
+  }
+  
+  
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+.contact input{
+    width: 90%;
+    font-size: 18px;
+    padding: 11px;
+    margin-top: 11px;
+    height: 13px;
+}
+#msg{
+    width: 90%;
+    margin-top: 12px;
+    padding: 11px;
+    font-size: 18px;
+}
+.contact button{
+    width: 100px;
+    height: 36px;
+    border: none;
+    background-color: pink;
+    margin-top: 22px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.skill-head{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.icons{
+    text-align: center;
+    font-size: 42px;
+    cursor: pointer;
+}
+.footer{
+    padding: 33px;
+    margin-top: 22px;
+
+}
+.text p{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 22px;
+}
+#bar{
+    display: none;
+    font-size: 26px;
+}
+
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:660px){
+    .mainText h1{
+        font-size: 33px;
+    }
+    .main img{
+        width: 90%;
+    }
+    .mainText p{
+        font-size: 14px;
+    }
+    .serviceCard{
+        width: 70%;
+    }
+    .workCard img{
+        width: 80%;
+    }
+    .contact{
+        width: 80%;
+    }
+    ul{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+  
+}
+
+@media screen and (max-width:410px){
+      .about{
+        text-align: center;
+    }
+    .about img{
+        width: 90%;
+        height: 250px;
+    }
+}
